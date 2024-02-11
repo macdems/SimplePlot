@@ -6,5 +6,15 @@
     "qtForPython.rcc.options": [
         "-o ${resourceDirname}${pathSeparator}${resourceBasenameNoExtension}_rc.py",
         "--vscode_extension_qt_dependency PyQt5"
+    ],
+    "qtForPython.lupdate.options": [
+        "-ts ${resourceDirname}${pathSeparator}${resourceBasenameNoExtension}.ts",
+        "--vscode_extension_qt_dependency PyQt5"
+    ],
+    "qtForPython.linguist.options": [
+        "--vscode_extension_qt_dependency PyQt5"
+    ],
+    "qtForPython.lrelease.options": [
+        "--vscode_extension_qt_dependency PyQt5"
     ]
 }

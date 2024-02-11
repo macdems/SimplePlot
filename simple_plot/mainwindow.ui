@@ -198,9 +198,36 @@
      <height>34</height>
     </rect>
    </property>
+   <addaction name="load_action"/>
+   <addaction name="save_action"/>
+   <addaction name="export_action"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
- </widget>
+  <action name="load_action">
+   <property name="text">
+    <string>&amp;Load</string>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Ctrl+O</string>
+   </property>
+  </action>
+  <action name="save_action">
+   <property name="text">
+    <string>&amp;Save</string>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Ctrl+S</string>
+   </property>
+  </action>
+  <action name="export_action">
+    <property name="text">
+     <string>Save &amp;figure</string>
+    </property>
+    <property name="shortcut">
+     <string notr="true">Ctrl+E</string>
+    </property>
+   </action>
+  </widget>
  <tabstops>
   <tabstop>xsymbol</tabstop>
   <tabstop>xname</tabstop>
@@ -210,5 +237,6 @@
   <tabstop>yunit</tabstop>
   <tabstop>data_table</tabstop>
  </tabstops>
+ <resources/>
  <connections/>
 </ui>

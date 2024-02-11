@@ -1,1 +1,6 @@
-<RCC/>
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file>translations/simpleplot_pl.qm</file>
+    <file>icon.svg</file>
+</qresource>
+</RCC>
