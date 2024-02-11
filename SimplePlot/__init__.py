@@ -12,6 +12,24 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 import sys
 
-from simple_plot import main
+from PyQt5.QtCore import QLibraryInfo, QLocale, QTranslator
+from PyQt5.QtWidgets import QApplication
 
-sys.exit(main(sys.argv))
+from .mainwindow import MainWindow
+
+
+def main(argv=None):
+    if argv is None: argv = sys.argv
+    app = QApplication(argv)
+
+    # Configure Qt translations
+    locale = QLocale.system()
+    translator = QTranslator()
+    translator.load(locale, 'qtbase', '_', QLibraryInfo.location(QLibraryInfo.TranslationsPath))
+    translator.load(locale, 'simpleplot', '_', ":/translations")
+    app.installTranslator(translator)
+
+    main_window = MainWindow()
+    main_window.show()
+
+    return app.exec()

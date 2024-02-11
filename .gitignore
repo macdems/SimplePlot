@@ -1,2 +1,5 @@
 *.db
 /simple_plot/translations/*.qm
+*.egg-info
+/dist
+/SimplePlot/__version__.py

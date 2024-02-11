@@ -12,6 +12,6 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 import sys
 
-from simple_plot import main
+from SimplePlot import main
 
 sys.exit(main(sys.argv))
