@@ -2,5 +2,9 @@
     "qtForPython.uic.options": [
         "-o ${resourceDirname}${pathSeparator}${resourceBasenameNoExtension}_ui.py",
         "--vscode_extension_qt_dependency PyQt5"
+    ],
+    "qtForPython.rcc.options": [
+        "-o ${resourceDirname}${pathSeparator}${resourceBasenameNoExtension}_rc.py",
+        "--vscode_extension_qt_dependency PyQt5"
     ]
 }

@@ -10,7 +10,6 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
-import os
 
 from PyQt5.QtCore import QLibraryInfo, QLocale, QTranslator
 from PyQt5.QtWidgets import QApplication
@@ -25,7 +24,7 @@ def main(argv):
     locale = QLocale.system()
     translator = QTranslator()
     translator.load(locale, 'qtbase', '_', QLibraryInfo.location(QLibraryInfo.TranslationsPath))
-    translator.load(locale, 'simpleplot', '_', os.path.join(os.path.dirname(__file__), "translations"))
+    translator.load(locale, 'simpleplot', '_', ":/translations")
     app.installTranslator(translator)
 
     main_window = MainWindow()

@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>Simple Plot</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/icon.svg</normaloff>:/icon.svg</iconset>
+  </property>
   <widget class="QWidget" name="central_widget">
    <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,1,3">
     <item>
@@ -206,6 +210,5 @@
   <tabstop>yunit</tabstop>
   <tabstop>data_table</tabstop>
  </tabstops>
- <resources/>
  <connections/>
 </ui>

@@ -18,9 +18,10 @@ from matplotlib.figure import Figure
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
+from scipy.stats import linregress
 
+from . import simpleplot_rc  # noqa
 from .mainwindow_ui import Ui_MainWindow
-from .numerics import linear_fit
 from .util import BlockQtSignals
 
 
@@ -122,7 +123,8 @@ class MainWindow(Ui_MainWindow, QMainWindow):
             self.intercept.setText('')
             return
 
-        a, b, da, db = linear_fit(x, y)
+        result = linregress(x, y)
+        a, b, da, db = result.slope, result.intercept, result.stderr, result.intercept_stderr
 
         xu = self.xunit.text()
         yu = self.yunit.text()
