@@ -1,5 +1,8 @@
 *.db
-/simple_plot/translations/*.qm
+/SimplePlot/translations/*.qm
 *.egg-info
+/build
 /dist
+/.venv
+__pycache__
 /SimplePlot/__version__.py

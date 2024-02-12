@@ -18,7 +18,7 @@ classifiers = [
     "Operating System :: OS Independent",
     "Topic :: Education",
 ]
-dependencies = ["PyQt5", "numpy", "matplotlib"]
+dependencies = ["PyQt5", "numpy", "matplotlib", "scipy"]
 dynamic = ["version"]
 
 [project.urls]
